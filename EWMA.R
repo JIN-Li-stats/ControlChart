@@ -14,10 +14,7 @@ rl <- vector(mode = "numeric", length = loop)
 output <-matrix(1:81, nrow=9, ncol=9)
 colnames(output)<-c("shift","ARL","SDRL","0.05","0.10","0.25","0.5","0.75","0.95")
 
-time1 <- proc.time()
-
-for (shift in seq(0, 0.75, 0.25)) {
-# for (shift in seq(0, 2, 0.25)) {
+for (shift in seq(0, 2, 0.25)) {
    if (shift == 0.0) {
       w <- 0
    }else {
@@ -50,6 +47,3 @@ for (shift in seq(0, 0.75, 0.25)) {
 }
 print(output)
 #write.table(output, file = "D:\\OneDrive\\SPC\\Code\\output.csv",sep = ",", row.names = FALSE, col.names = TRUE)
-
-time2 <- proc.time()
-print(time2-time1)
