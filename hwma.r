@@ -21,8 +21,6 @@ j <- 1
 output <-matrix(1:80, nrow=10, ncol=8)
 rl <- vector(mode = "numeric", length = loop)
 
-t1=proc.time()
-# for (shift in c(seq(0.00, 0.75, 0.25))){
 for (shift in c(seq(0.00, 1.00, 0.25), seq(1.50, 3.00, 0.50), 5.00)){
   for (i in 1:loop){
     k <- 0
@@ -59,6 +57,3 @@ for (shift in c(seq(0.00, 1.00, 0.25), seq(1.50, 3.00, 0.50), 5.00)){
   j <- j+1
 }
 print(output)
-
-t2=proc.time()
-print(t2-t1)
