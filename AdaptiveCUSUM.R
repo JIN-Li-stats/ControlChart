@@ -1,7 +1,7 @@
 # Adaptive CUSUM
 # Article title: CUSUM Charts for Signalling Varying Location Shifts
 # DOI: 10.1080/00224065.2000.11979987
-# ARL0=400
+# IC-ARL=400
 
 rm(list = ls())
 
