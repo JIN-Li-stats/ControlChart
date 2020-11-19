@@ -1,4 +1,4 @@
-# EWMA program (Steady state)
+# EWMA program (Steady State)
 # ARL0 = 370
 
 rm(list = ls())
